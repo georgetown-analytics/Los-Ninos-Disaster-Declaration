@@ -18,7 +18,7 @@ def closeDB(dBCon):
 	print("DB Close")
 
 dBCon, cursor = connectDB()
-disaster = pd.read_csv('DisasterDeclarationsSummaries2.csv')
+disaster = pd.read_csv('DisasterDeclarationsSummaries3.csv')
 print(list(disaster))
 disaster.to_sql('disaster', con = dBCon)
 closeDB(dBCon)
